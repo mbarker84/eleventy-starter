@@ -1,0 +1,23 @@
+---
+title: 'My 11ty starter'
+images:
+  - 'clock.svg'
+  - 'credit-card.svg'
+---
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{ title }}</title>
+	</head>
+	<body>
+		<h1>{{ title }}</h1>
+		<ul>
+			{% for filename in images %}
+			<li>
+				<a href="images/{{ filename | url_encode }}">{{ filename }}</a>
+			</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
