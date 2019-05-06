@@ -1,14 +1,18 @@
 {
-  "name": "eleventy-starter",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.8.2"
-  }
+	"name": "eleventy-starter",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"scss": "node-sass --watch scss -o _site/css"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@11ty/eleventy": "^0.8.2"
+	},
+	"dependencies": {
+		"node-sass": "^4.12.0"
+	}
 }
